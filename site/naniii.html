@@ -1,0 +1,78 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <title>my index page</title>
+
+   <style>
+      div {
+         background: gray;
+         width: 400px;
+         height: 200px;
+         margin: 50px;
+         padding: 25px;
+         border: 5px solid black;
+      }
+
+      .static {
+         position: static;
+         background: #ABA7ED;
+         
+      }
+      .relative {
+         position: relative;
+         left: 150px;
+         top: -100px;
+         background: #7A57ED;
+      }
+      .fixed {
+         position: fixed;
+         right: 0;
+         top: 0;
+         background: #BED;
+      }
+      .absolute {
+         position: absolute;
+         right: 0;
+         background: #A15;
+      }
+      .sticky {
+         position: sticky;
+         top: 150px;
+
+         background: #DE1CED;
+      }
+   </style>
+</head>
+
+<body>
+
+ <div class="sticky">
+         <p>sticky box</p>
+         <img src="https://loremflickr.com/640/360" alt="KAT" height="150">
+      </div>
+
+      <div class="static">
+         <p>static box</p>
+      </div> 
+
+      <div class="relative">
+         <p>relative box</p>
+      </div>
+ 
+      <div class="fixed">
+         <p>fixed box</p>  
+         <img src="https://picsum.photos/640/360" alt="WHAT" height="150">
+       
+      </div>
+      <div class="absolute"> 
+         <p>absolute box</p>
+         <img src="https://placebeard.it/640x360" alt="BEARD" height="150">
+      </div>
+     
+
+</body>
+
+</html>
