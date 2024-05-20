@@ -1,0 +1,98 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>my grid page</title>
+  <style>
+    body {
+      background-image: url('https://baconmockup.com/640/360');
+    }
+
+    h1 {
+      color: #FFFFFF
+    }
+
+    h2 {
+      color: #FFFFFF
+    }
+
+    P {
+      color: #FFFFFF
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: 100PX 100PX 100PX 100PX 100PX 100PX;
+      grid-template-rows: 100px 100px 150px 100px 100px 100px;
+      gap: 0px 0px;
+      grid-auto-flow: row;
+      grid-template-areas:
+        ". header header header header ."
+        ". header header header header ."
+        ". sub-head sub-head sub-head sub-head ."
+        ". main main main alt ."
+        ". main main main alt ."
+        ". main main main alt .";
+    }
+
+    header {
+      grid-area: header;
+      background: #c23303;
+      padding: 25px;
+      border: #5d0000 solid 2px;
+    }
+
+    sub-head {
+      grid-area: sub-head;
+      background: #782104;
+      padding: 25px;
+      margin: 10px;
+      border: #5d0000 solid 2px;
+    }
+
+    main {
+      grid-area: main;
+      background: #ff2f00;
+      padding: 25px;
+      margin: 10px;
+      text-align: center;
+      border: #5d0000 solid 2px;
+    }
+
+    alt {
+      grid-area: alt;
+      padding: 15px;
+      background: #ad340c;
+      margin: 10px;
+      border: #5d0000 solid 2px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>P-P-A-P</h1>
+    </header>
+    <sub-head>
+      <h2>I have a pen, I have a apple
+        Uh! Apple-pen!
+      </h2>
+    </sub-head>
+    <main>
+      <p>Apple-pen, pineapple-pen
+        Uh! Pen-pineapple-apple-pen
+        Pen-pineapple-apple-pen
+        Dance time!</p>
+    </main>
+    <alt>
+      <p>I have a pen, I have a pen
+        Uh! Long pen!
+      </p>
+    </alt>
+  </div>
+</body>
+
+</html>
